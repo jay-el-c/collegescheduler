@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">CollegeScheduler</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <!-- menu -->
+    <string name="home_text">Home</string>
+    <string name="assignments_button_text">Assignments</string>
+    <string name="exams_button_text">Exams</string>
+    <string name="to_dos_button_text">To-Dos</string>
+    <string name="schedule_button_text">Schedule</string>
+    <string name="new_class_button_text">New Class</string>
+    <string name="new_assignment_button_text">New Assignment</string>
+    <string name="new_exam_button_text">New Exam</string>
+
+    <!-- new class -->
+    <string name="days_input_text">Input days of the week</string>
+    <string name="time_input_text">Time of the day</string>
+    <string name="days_of_week_text">Days of the week</string>
+    <string name="location_text">Location</string>
+    <string name="daytime_text">Time of day</string>
+    <string name="instructor_name">Input Instructor name</string>
+    <string name="location_input_text">Input Class Location</string>
+    <string name="instructor_text">Instructor</string>
+    <string name="input_course_id_text">Input course ID</string>
+    <string name="class_input_text">Input class</string>
+    <string name="course_id_text">Course ID</string>
+    <string name="course_name_text">Course Name</string>
+    <string name="submit_button_text">Submit</string>
+
+    <!-- new assignment -->
+    <string name="assignment_name">Assignment Name:</string>
+    <string name="assignment_text">Input assignment name</string>
+    <string name="class_id">Class ID:</string>
+    <string name="class_id_text">Input class ID</string>
+    <string name="due_date">Due Date:</string>
+    <string name="due_date_text">Input due date</string>
+    <string name="due_time">Due Time:</string>
+    <string name="due_time_text">Input due time</string>
+
+    <!-- new exam -->
+    <string name="exam">Exam</string>
+    <string name="exam_location_Title">Exam Location:</string>
+    <string name="input_exam_location">Input Exam Location</string>
+    <string name="input_date">Input Date</string>
+    <string name="date">Date:</string>
+    <string name="title">Title:</string>
+    <string name="input_title">Input Title</string>
+    <string name="submit">Submit</string>
+    <string name="input_time_of_day">Input Time Of Day</string>
+    <string name="time_of_day">Time of Day:</string>
+    <string name="day_of_the_week">Day of the week:</string>
+    <string name="input_day_of_week">Input Day Of Week</string>
+    <string name="input_course_id">Input Course ID</string>
+    <string name="course_id">Course ID:</string>
+
+    <!-- assignments -->
+    <string name="to_home">Home</string>
+
+    <!-- to-dos -->
+    <string name="new_todo_list_button_text">New To-Do List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".NewAssignmentFragment" >
+
+    <Button
+        android:id="@+id/submit_button2"
+        android:layout_width="122dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="94dp"
+        android:text="@string/submit_button_text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_due_time"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="104dp" />
+
+    <TextView
+        android:id="@+id/assignment_textView"
+        android:layout_width="136dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/assignment_name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/input_assignment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/class_id_textView"
+        android:layout_width="79dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/class_id"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/input_class_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignment_textView" />
+
+    <TextView
+        android:id="@+id/due_date_textView"
+        android:layout_width="79dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/due_date"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/input_due_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class_id_textView" />
+
+    <TextView
+        android:id="@+id/due_time_textView"
+        android:layout_width="79dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/due_time"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/input_due_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/due_date_textView" />
+
+    <EditText
+        android:id="@+id/input_assignment"
+        android:layout_width="257dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="@string/assignment_text"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_class_id"
+        android:layout_width="156dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="168dp"
+        android:ems="10"
+        android:hint="@string/class_id_text"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignment_textView" />
+
+    <EditText
+        android:id="@+id/input_due_date"
+        android:layout_width="191dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="133dp"
+        android:ems="10"
+        android:hint="@string/due_date_text"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class_id_textView" />
+
+    <EditText
+        android:id="@+id/input_due_time"
+        android:layout_width="131dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="192dp"
+        android:ems="10"
+        android:hint="@string/due_time_text"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/due_date_textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

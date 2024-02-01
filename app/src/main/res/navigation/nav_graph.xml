@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.collegescheduler.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/menuFragmentToNewClassFragment"
+            app:destination="@id/newClassFragment" />
+        <action
+            android:id="@+id/menuFragmentToNewAssignmentFragment"
+            app:destination="@id/newAssignmentFragment" />
+        <action
+            android:id="@+id/menuFragmentToAssignmentsFragment"
+            app:destination="@id/assignmentsFragment" />
+        <action
+            android:id="@+id/menuFragmentTotoDosFragment"
+            app:destination="@id/toDosFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newClassFragment"
+        android:name="com.example.collegescheduler.NewClassFragment"
+        android:label="fragment_new_class"
+        tools:layout="@layout/fragment_new_class" >
+        <action
+            android:id="@+id/NewClassFragmentToMenuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newAssignmentFragment"
+        android:name="com.example.collegescheduler.NewAssignmentFragment"
+        android:label="fragment_new_assignment"
+        tools:layout="@layout/fragment_new_assignment" >
+        <action
+            android:id="@+id/NewAssignmentFragmentToMenuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/assignmentsFragment"
+        android:name="com.example.collegescheduler.AssignmentsFragment"
+        android:label="fragment_assignments"
+        tools:layout="@layout/fragment_assignments" >
+        <action
+            android:id="@+id/AssignmentsFragmentToMenuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/toDosFragment"
+        android:name="com.example.collegescheduler.ToDosFragment"
+        android:label="fragment_to_dos"
+        tools:layout="@layout/fragment_to_dos" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/newExamFragment"
+        android:name="com.example.collegescheduler.NewExamFragment"
+        android:label="fragment_new_exam"
+        tools:layout="@layout/fragment_new_exam" >
+    </fragment>
+</navigation>

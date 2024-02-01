@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MenuFragment" >
+
+    <TextView
+        android:id="@+id/homeTextView"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="147dp"
+        android:fontFamily="serif"
+        android:text="@string/home_text"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/assignmentsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#009688"
+        android:text="@string/assignments_button_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTextView" />
+
+    <Button
+        android:id="@+id/examsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:backgroundTint="#009688"
+        android:text="@string/exams_button_text"
+        app:layout_constraintBottom_toTopOf="@+id/newClassButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignmentsButton" />
+
+    <Button
+        android:id="@+id/newClassButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/new_class_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTextView" />
+
+    <Button
+        android:id="@+id/newAssignmentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/new_assignment_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/newExamButton"
+        app:layout_constraintStart_toEndOf="@+id/newClassButton"
+        app:layout_constraintTop_toBottomOf="@+id/homeTextView" />
+
+    <Button
+        android:id="@+id/newExamButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/new_exam_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTextView"
+        app:layout_constraintVertical_bias="0.503" />
+
+    <Button
+        android:id="@+id/toDosButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#009688"
+        android:text="@string/to_dos_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTextView" />
+
+    <Button
+        android:id="@+id/WeeklySchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#009688"
+        android:text="@string/schedule_button_text"
+        app:layout_constraintBottom_toTopOf="@+id/newExamButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toDosButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
