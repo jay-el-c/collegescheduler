@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import java.nio.BufferUnderflowException;
+
 
 public class MenuFragment extends Fragment {
 
@@ -24,12 +26,15 @@ public class MenuFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Storage store = new Storage();
 
         view.findViewById(R.id.newClassButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("store", store);
                 NavHostFragment.findNavController(MenuFragment.this)
-                        .navigate(R.id.menuFragmentToNewClassFragment);
+                        .navigate(R.id.menuFragmentToNewClassFragment, bundle);
             }
         });
 

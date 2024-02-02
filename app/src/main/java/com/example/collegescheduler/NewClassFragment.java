@@ -68,10 +68,14 @@ public class NewClassFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        Storage store = (Storage) getArguments().getSerializable("store");
         view.findViewById(R.id.class_submit_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                //store.addClass(new Class(String title, other params))
+                //  look at Class.java to see params.
+
                 NavHostFragment.findNavController(NewClassFragment.this)
                         .navigate(R.id.NewClassFragmentToMenuFragment);
             }

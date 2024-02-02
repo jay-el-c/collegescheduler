@@ -45,9 +45,6 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
-        Storage store = new Storage();
-
     }
 
     @Override

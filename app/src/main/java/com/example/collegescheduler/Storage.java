@@ -3,7 +3,7 @@ package com.example.collegescheduler;
 import java.util.*;
 import java.io.*;
 
-public class Storage {
+public class Storage implements Serializable {
     private ArrayList<Assignment> assignments;
     private ArrayList<Exam> exams;
     private ArrayList<Class> classes;
