@@ -56,5 +56,7 @@ public class MenuFragment extends Fragment {
                         .navigate(R.id.menuFragmentToNewExamFragment);
             }
         });
+
+
     }
 }
