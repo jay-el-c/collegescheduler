@@ -174,10 +174,11 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <Button
-        android:id="@+id/submit_button1"
+        android:id="@+id/class_submit_button"
         android:layout_width="147dp"
         android:layout_height="73dp"
         android:text="@string/submit_button_text"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -69,7 +69,7 @@ public class NewAssignmentFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.submit_button2).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.assignment_submit_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(NewAssignmentFragment.this)

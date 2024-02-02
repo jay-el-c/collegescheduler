@@ -4,30 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background" >
+    android:background="@color/background">
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/ExamCourse_ID_Input"
-        android:layout_width="206dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="35dp"
+        android:layout_width="205dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="4dp"
         android:hint="@string/input_exam_location"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.98"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ExamCourseIDInput" />
+        app:layout_constraintStart_toEndOf="@+id/ExamExamLocTag"
+        app:layout_constraintTop_toBottomOf="@+id/ExamCourseIDTag" />
 
     <TextView
         android:id="@+id/ExamExamLocTag"
-        android:layout_width="188dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="12dp"
+        android:layout_width="130dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="8dp"
         android:text="@string/exam_location_Title"
         android:textSize="27sp"
-        app:layout_constraintEnd_toStartOf="@+id/ExamCourse_ID_Input"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ExamCourseIDTag" />
 
@@ -35,45 +30,40 @@
         android:id="@+id/ExamCourseIDTag"
         android:layout_width="182dp"
         android:layout_height="60dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginStart="8dp"
         android:text="@string/course_id"
         android:textSize="27sp"
-        app:layout_constraintEnd_toStartOf="@+id/ExamCourseIDInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ExamDayOfWeekTag" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/ExamCourseIDInput"
-        android:layout_width="206dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="203dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="4dp"
         android:hint="@string/input_course_id"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ExamCourseIDTag"
         app:layout_constraintTop_toBottomOf="@+id/ExamDayOfWeekInput" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/ExamDayOfWeekInput"
         android:layout_width="206dp"
         android:layout_height="60dp"
-        android:layout_marginTop="35dp"
         android:layout_marginEnd="4dp"
         android:hint="@string/input_day_of_week"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ExamTimeOfDayInput" />
+        app:layout_constraintStart_toEndOf="@+id/ExamDayOfWeekTag"
+        app:layout_constraintTop_toTopOf="@+id/ExamDayOfWeekTag" />
 
     <TextView
         android:id="@+id/ExamDayOfWeekTag"
-        android:layout_width="180dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="12dp"
+        android:layout_width="184dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="8dp"
         android:text="@string/day_of_the_week"
         android:textSize="27sp"
-        app:layout_constraintEnd_toStartOf="@+id/ExamDayOfWeekInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ExamTimeOfDayTag" />
 
@@ -81,48 +71,39 @@
         android:id="@+id/ExamTimeOfDayTag"
         android:layout_width="182dp"
         android:layout_height="60dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="10dp"
         android:text="@string/time_of_day"
         android:textSize="27sp"
-        app:layout_constraintBottom_toTopOf="@+id/ExamDayOfWeekTag"
-        app:layout_constraintEnd_toStartOf="@+id/ExamTimeOfDayInput"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ExamTitleTag" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/ExamTimeOfDayInput"
         android:layout_width="206dp"
         android:layout_height="60dp"
-        android:layout_marginTop="35dp"
         android:layout_marginEnd="4dp"
         android:hint="@string/input_time_of_day"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ExamTimeOfDayTag"
         app:layout_constraintTop_toBottomOf="@+id/TitleInput" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/ExamDateInput"
         android:layout_width="206dp"
         android:layout_height="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
         android:hint="@string/input_date"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.98"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ExamDateTag"
         app:layout_constraintTop_toBottomOf="@+id/ExamCourse_ID_Input" />
 
     <TextView
         android:id="@+id/ExamDateTag"
-        android:layout_width="182dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="15dp"
+        android:layout_width="159dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="10dp"
         android:text="@string/date"
         android:textSize="27sp"
-        app:layout_constraintEnd_toStartOf="@+id/ExamDateInput"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ExamExamLocTag" />
 
@@ -130,14 +111,10 @@
         android:id="@+id/ExamTitleTag"
         android:layout_width="182dp"
         android:layout_height="60dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
         android:text="@string/title"
         android:textSize="27sp"
-        app:layout_constraintBottom_toTopOf="@+id/ExamTimeOfDayTag"
-        app:layout_constraintEnd_toStartOf="@+id/TitleInput"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -145,24 +122,24 @@
         android:id="@+id/TitleInput"
         android:layout_width="206dp"
         android:layout_height="60dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="4dp"
         android:hint="@string/input_title"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ExamTitleTag"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/ExamSubmitButton"
         android:layout_width="136dp"
         android:layout_height="77dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginEnd="160dp"
-        android:text="@string/submit"
+        android:layout_marginStart="137dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="130dp"
+        android:text="@string/submit_button_text"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.949" />
+        app:layout_constraintTop_toBottomOf="@+id/ExamDateTag" />
 </androidx.constraintlayout.widget.ConstraintLayout>

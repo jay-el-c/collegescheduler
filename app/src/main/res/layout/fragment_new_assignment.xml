@@ -9,7 +9,7 @@
     tools:context=".NewAssignmentFragment" >
 
     <Button
-        android:id="@+id/submit_button2"
+        android:id="@+id/assignment_submit_button"
         android:layout_width="122dp"
         android:layout_height="71dp"
         android:layout_marginStart="144dp"

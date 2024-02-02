@@ -21,6 +21,9 @@
         <action
             android:id="@+id/menuFragmentTotoDosFragment"
             app:destination="@id/toDosFragment" />
+        <action
+            android:id="@+id/menuFragmentToNewExamFragment"
+            app:destination="@id/newExamFragment" />
     </fragment>
 
     <fragment
@@ -65,5 +68,8 @@
         android:name="com.example.collegescheduler.NewExamFragment"
         android:label="fragment_new_exam"
         tools:layout="@layout/fragment_new_exam" >
+        <action
+            android:id="@+id/NewExamFragmentToMenuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
 </navigation>
