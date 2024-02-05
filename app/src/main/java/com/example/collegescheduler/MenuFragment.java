@@ -53,7 +53,7 @@ public class MenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(MenuFragment.this)
-                        .navigate(R.id.menuFragmentTotoDosFragment);
+                        .navigate(R.id.newExamFragment);
             }
         });
     }
