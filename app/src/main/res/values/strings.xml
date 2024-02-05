@@ -39,7 +39,7 @@
     <string name="class_id">Class ID:</string>
     <string name="class_id_text">Input class ID</string>
     <string name="due_date">Due Date:</string>
-    <string name="due_date_text">Input due date</string>
+    <string name="due_date_text">Input due date (MM/DD/YYYY)</string>
     <string name="due_time">Due Time:</string>
     <string name="due_time_text">Input due time</string>
 
@@ -47,7 +47,7 @@
     <string name="exam">Exam</string>
     <string name="exam_location_Title">Exam Location:</string>
     <string name="input_exam_location">Input Exam Location</string>
-    <string name="input_date">Input Date</string>
+    <string name="input_date">Input Date (MM/DD/YYYY)</string>
     <string name="date">Date:</string>
     <string name="title">Title:</string>
     <string name="input_title">Input Title</string>

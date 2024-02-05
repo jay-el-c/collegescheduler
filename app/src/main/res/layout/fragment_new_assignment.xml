@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".NewAssignmentFragment" >
+    tools:context=".NewAssignmentFragment">
 
     <Button
         android:id="@+id/assignment_submit_button"
@@ -94,9 +94,9 @@
 
     <EditText
         android:id="@+id/input_due_date"
-        android:layout_width="191dp"
-        android:layout_height="67dp"
-        android:layout_marginEnd="133dp"
+        android:layout_width="257dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="66dp"
         android:ems="10"
         android:hint="@string/due_date_text"
         android:inputType="date"
