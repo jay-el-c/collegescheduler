@@ -19,10 +19,7 @@
             android:id="@+id/menuFragmentToAssignmentsFragment"
             app:destination="@id/assignmentsFragment" />
         <action
-            android:id="@+id/action_menuFragment_to_newExamFragment"
-            app:destination="@id/newExamFragment" />
-        <action
-            android:id="@+id/action_menuFragment_to_toDosFragment"
+            android:id="@+id/menuFragment_to_toDosFragment"
             app:destination="@id/toDosFragment" />
         <action
             android:id="@+id/menuFragmentToNewExamFragment"
