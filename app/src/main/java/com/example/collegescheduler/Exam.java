@@ -36,6 +36,4 @@ public class Exam extends Event implements DateHolder {
         String s = super.toString();
         return String.format("%s\n%s\n%s\n-\n", s, location, date);
     }
-
-
 }

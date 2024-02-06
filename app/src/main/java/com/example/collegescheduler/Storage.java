@@ -108,8 +108,8 @@ public class Storage implements Serializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        int numAss = Integer.parseInt(scan.nextLine().split(">")[1]);
-        for (int i = 0; i < numAss; i++) {
+        int numAssignment = Integer.parseInt(scan.nextLine().split(">")[1]);
+        for (int i = 0; i < numAssignment; i++) {
             String title = scan.nextLine();
             String time_of_day = scan.nextLine();
             String days_of_week = scan.nextLine();
@@ -160,6 +160,4 @@ public class Storage implements Serializable {
         }
         return data;
     }
-
-
 }
